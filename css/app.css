@@ -5,3 +5,8 @@
     height: auto;
     background: url(polina.jpg) no-repeat;
 }
+
+.nav-wrapper .button-collapse {
+  height: 64px;
+  line-height: 64px;
+}

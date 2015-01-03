@@ -34,7 +34,8 @@
 
         <div class="parallax-container">
             <div class="parallax">
-                <video autoplay loop poster="img/head.jpg" id="parallax-vid">
+                <img src="img/head-s.jpg" alt="Greetings!" class="hide-on-large-only">
+                <video autoplay loop poster="img/head.jpg" class="hide-on-med-and-down" id="parallax-vid">
                     <!-- <source src="polina.webm" type="video/webm"> -->
                     <source src="video/bike-HD.mp4" type="video/mp4">
                 </video>
@@ -73,6 +74,7 @@
         </footer>
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script>if (!window.jQuery) { document.write('<script src="js/jquery-2.1.1.min.js"><\/script>'); }</script>
         <script src="js/materialize.min.js"></script>
         <script src="js/main.js"></script>
     </body>
