@@ -2,7 +2,9 @@
   <div>
     <AppHeader />
     <main>
-      <slot />
+      <section class="bg-white dark:bg-gray-900">
+        <slot />
+      </section>
     </main>
     <AppFooter />
   </div>
