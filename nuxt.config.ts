@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  modules: ['@nuxtjs/tailwindcss'],
   app: {
     head: {
       charset: 'utf-16',
@@ -9,5 +10,8 @@ export default defineNuxtConfig({
         { name: 'description', content: 'My amazing site.' },
       ],
     },
+  },
+  tailwindcss: {
+    viewer: true,
   },
 });
