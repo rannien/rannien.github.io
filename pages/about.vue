@@ -14,6 +14,10 @@
         From checkout to global sales tax compliance, companies around the world
         use Flowbite to simplify their payment stack.
       </p>
+
+      <div class="mockup-window border bg-base-300">
+        <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
+      </div>
     </div>
   </div>
 </template>
