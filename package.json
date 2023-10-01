@@ -8,11 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.1.1",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^3.7.4"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.3",
-    "daisyui": "^2.33.0"
+    "daisyui": "^3.8.2"
   }
 }
