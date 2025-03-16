@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+    <section class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 to-teal-400 p-6">
+        <div class="max-w-3xl w-full backdrop-blur-md bg-white/10 rounded-xl p-8 border border-white/20 shadow-xl">
+            <h1 class="text-5xl font-bold text-white mb-6">Portfolio</h1>
+            
+            <div class="relative mb-10">
+                <div class="h-2 bg-white/20 rounded-full overflow-hidden">
+                    <div class="h-full bg-white/50 rounded-full w-2/3 animate-pulse"></div>
+                </div>
+                <div class="flex justify-between mt-2 text-sm text-white/70">
+                    <span>Planning</span>
+                    <span>Development</span>
+                    <span>Launch</span>
+                </div>
+            </div>
+            
+            <p class="text-xl text-white/90 mb-8">Currently crafting something awesome. Please check back soon!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-white/5 border border-white/10 rounded-lg p-4 h-32 animate-pulse flex items-center justify-center">
+                    <span class="text-white/50">Project 1</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-4 h-32 animate-pulse flex items-center justify-center">
+                    <span class="text-white/50">Project 2</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-4 h-32 animate-pulse flex items-center justify-center">
+                    <span class="text-white/50">Project 3</span>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/" class="px-6 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all border border-white/20 text-center">
+                    Return Home
+                </a>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-white/70 text-sm">
+            <p>Expected completion: Coming soon</p>
+        </div>
+    </section>
+</Layout>
