@@ -1,18 +1,16 @@
 {
-  "private": true,
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "nuxt": "^3.7.4"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.3",
-    "daisyui": "^3.8.2"
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.2",
+    "tailwindcss": "^4.0.14"
   }
 }
