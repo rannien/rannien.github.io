@@ -3,21 +3,26 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
+interface Props {
+  title: string;
+  description: string;
+}
+
 const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="bg-linear-to-br from-indigo-500 to-teal-400 h-full w-full">
     <head>
         <BaseHead title={title} description={description} />
     </head>
 
-    <body>
+    <body class="bg-linear-to-br from-indigo-500 to-teal-400 h-full w-full">
         <Header />
 
         <div
-            class="min-h-screen bg-linear-to-br from-indigo-500 to-teal-400 h-full w-full flex items-center justify-center p-8"
+            class="min-h-screen h-full w-full flex items-center justify-center p-8"
         >
-            <main>
+            <main class="flex self-start">
                 <slot />
             </main>
         </div>
