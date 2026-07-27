@@ -1,6 +1,9 @@
 ---
 import { SITE_TITLE } from "../consts";
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLinkMobile from "./HeaderLinkMobile.astro";
+import HeaderLinkDesktop from "./HeaderLinkDesktop.astro";
+
+
 ---
 
 <header class="absolute inset-x-0 top-0 z-50">
@@ -10,7 +13,7 @@ import HeaderLink from "./HeaderLink.astro";
 	>
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
-				<span class="sr-only">Rannien's Blog</span>
+				<span class="sr-only">{SITE_TITLE}</span>
 				<img
 					src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
 					alt=""
@@ -43,13 +46,10 @@ import HeaderLink from "./HeaderLink.astro";
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
-			<a href="/" class="text-sm/6 font-semibold text-white">Home</a>
-			<a href="/blog" class="text-sm/6 font-semibold text-white">Blog</a>
-			<a href="/projects" class="text-sm/6 font-semibold text-white"
-				>Projects</a
-			>
-			<a href="/about" class="text-sm/6 font-semibold text-white">About</a
-			>
+			<HeaderLinkDesktop href="/">Home</HeaderLinkDesktop>
+			<HeaderLinkDesktop href="/blog">Blog</HeaderLinkDesktop>
+			<HeaderLinkDesktop href="/projects">Projects</HeaderLinkDesktop>
+			<HeaderLinkDesktop href="/about">About</HeaderLinkDesktop>
 		</div>
 	</nav>
 	<el-dialog>
@@ -93,12 +93,10 @@ import HeaderLink from "./HeaderLink.astro";
 					<div class="mt-6 flow-root">
 						<div class="-my-6 divide-y divide-white/10">
 							<div class="space-y-2 py-6">
-								<HeaderLink href="/">Home</HeaderLink>
-								<HeaderLink href="/blog">Blog</HeaderLink>
-								<HeaderLink href="/projects"
-									>Projects</HeaderLink
-								>
-								<HeaderLink href="/about">About</HeaderLink>
+								<HeaderLinkMobile href="/">Home</HeaderLinkMobile>
+								<HeaderLinkMobile href="/blog">Blog</HeaderLinkMobile>
+								<HeaderLinkMobile href="/projects">Projects</HeaderLinkMobile>
+								<HeaderLinkMobile href="/about">About</HeaderLinkMobile>
 							</div>
 						</div>
 					</div>
