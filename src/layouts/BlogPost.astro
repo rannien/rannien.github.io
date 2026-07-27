@@ -9,7 +9,7 @@ type Props = CollectionEntry<"blog">["data"];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<FullScreen title={title} :description={description}>
+<FullScreen title={title} description={description}>
     <article>
         <h1 class="text-white font-bold text-5xl mb-2">{title}</h1>
 
