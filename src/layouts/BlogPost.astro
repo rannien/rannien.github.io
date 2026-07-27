@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import FullScreen from "./FullScreen.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<FullScreen title={title} description={description}>
+    <article>
+        <h1 class="text-white font-bold text-5xl mb-2">{title}</h1>
+
+        <div class="text-white text-sm mb-4">
+            <FormattedDate date={pubDate} />
+            {
+                updatedDate && (
+                    <div class="last-updated-on">
+                        Last updated on{" "}
+                        <FormattedDate date={updatedDate} />
+                    </div>
+                )
+            }
+        </div>
+
+        <div class="mb-4">
+            {
+                heroImage && (
+                    <Image  src={heroImage} alt="" loading="eager" />
+                )
+            }
+        </div>
+        <div class="text-white">
+            <slot />
+        </div>
+    </article>
+</FullScreen>

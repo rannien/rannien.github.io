@@ -1,7 +1,10 @@
 {
-  "name": "",
+  "name": "rannien.github.io",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,8 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.14",
-    "astro": "^5.5.2",
-    "tailwindcss": "^4.0.14"
+    "@astrojs/mdx": "^7.0.3",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.1.3",
+    "sharp": "^0.35.0",
+    "tailwindcss": "^4.3.3"
   }
 }
